@@ -1,0 +1,54 @@
+.auction__body{
+    display: flex;
+    max-height:  100vh;
+    overflow-y: hidden;
+    align-items: center;    
+    margin-top: 30px;
+}
+
+.auction__content > h1 {
+    color: rgb(7, 62, 107);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+.auction__content > p{
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(163, 168, 168);
+}
+
+.auction__content{
+    position: relative;
+    flex : 0.4;
+    margin: 0 5vw;
+    min-height: 80vh;
+}
+
+.auction__icons{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    margin-left: 3vw;
+}
+
+.auction__icons > .MuiAvatar-root{
+    margin: 7px;
+}
+
+.auction__img{
+    flex: 0.6;
+}
+.auction__img img{
+    width: 100%;
+    height: 80%;
+}
+
+@media (max-width: 768px){
+    .auction__body{
+        display: block;
+    }  
+}
+
+

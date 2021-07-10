@@ -1,0 +1,88 @@
+.title{
+    background-color: lightblue;
+    padding: 5vh 0vw 5vh 0vw;
+    position: relative;
+    z-index: -1;
+}
+
+.title > img {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 450px;
+    height: 300px;
+}
+
+.title>h1{
+    padding-left: 70px;
+    padding-top: 10px;
+    color: rgb(27, 8, 189) ;
+    font-size: 50px;
+   font-weight:bolder;
+}
+.title>p1{
+    margin-top: -5px;
+    margin-left: 60px;
+    font-size: 25px;
+    color:rgb(27, 8, 189) ;
+}
+.p2{
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: x-large;
+    color: rgb(104, 114, 124);
+    margin-left: 25px;
+    width: 50%;
+}
+.p4{
+    padding-top: 120px;
+    font-size: large;
+    color: rgb(104, 114, 124); 
+    padding-left: 80px;
+}
+.b4>Button{
+    border-radius: 25px;
+   width: 250px;
+   height: 50px;
+   margin-left: 150px;
+   margin-top: 1em;
+   background-color:rgb(27, 8, 189) ;
+ 
+}
+.p5{
+    padding-left: 5vw;
+    padding-top: 50px;
+    color: rgb(104, 114, 124);
+}
+
+.p5 > p3{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+.bottom{
+    border-top: 2px solid gray;
+    margin:3vh 3vw 5vh 3vw;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.bottom > div{
+    border: 2px solid rgb(219, 219, 219);
+    margin: 1vw;
+    box-shadow: -2px 5px 10px rgb(160, 160, 160);
+}
+#create_button {
+    width: 150px;
+    padding: 7px;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: rgb(27, 8, 189) ;
+}
+
+ 
+ 

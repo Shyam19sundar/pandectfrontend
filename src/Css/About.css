@@ -1,0 +1,66 @@
+.about__body{
+    display: flex;
+}
+
+.about__left{
+    flex: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.about__left img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.about__right{
+    margin: 2vw;
+    flex: 65%;
+    margin-left: 1vw;
+}
+
+.about__right > h3{
+    color: rgb(7, 62, 107);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+ .our{
+    color: rgb(7, 62, 107);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.about__right > p{
+    margin-top: 10px;
+    margin-right: 10vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(163, 168, 168);
+}
+
+.about__icons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.about__avatar{
+    margin: 2vw;
+    display: grid;
+    place-items: center;
+}
+
+
+.about__icons > .MuiAvatar-root{
+    margin: 7px;
+}
+
+@media (max-width: 768px){
+    .about__body{
+        display: block;
+    }  
+}
+

@@ -1,0 +1,111 @@
+
+.header {
+    font-weight: 500;
+    background-color:rgb(226, 222, 222); 
+    color: rgb(5, 97, 5) !important;
+} 
+.navbar-brand{
+  padding: 5px 10px 5px 10px;
+}
+#nav-select {
+    max-width: 80vh;
+    height: 50px;
+     display: flex;
+   justify-content: center;
+   font-weight: normal;
+   align-items: center;
+   text-decoration: none !important;
+   color: seagreen !important;
+}
+.search  {
+    border-radius: 30px;
+    height: 25px;
+}
+.blog .blog {
+  border-radius: 25px;
+  background-color: rgb(27, 8, 189);
+  color: white;
+  text-align: center;
+  height: 40px;
+  margin:10px;
+}
+#signin {
+ margin-top: 0px !important;  
+ border-radius: 25px;
+ background-color: rgb(27, 8, 189);
+}
+
+
+ .userDp {
+   position: relative;
+ }
+
+ .userDp_image {
+   width: 50px;
+   border-radius: 25px;
+   border: 1px solid rgb(5, 97, 5);
+   box-shadow: 0px 1px 3px rgb(5, 97, 5);
+   z-index: 1;
+   cursor: pointer;
+ }
+ .userDp_container {
+   position: absolute;
+   padding-top: 10px;
+   right: 5px;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   z-index: 1;
+   min-width: 120px;
+   box-shadow: 5px 7px 10px rgba(0,0,0,0.2);
+ }
+
+ .userDp_container p {
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 15px;
+  background-color: #f1f1f1;
+  margin: 0;
+  cursor: pointer;
+ }
+
+ .userDp_container p:hover {
+   background-color: #e0e0e0;
+ }
+
+ .formSearch {
+  margin-bottom: 5px;
+  width: 100%;
+ }
+.searchContents  {
+   display: flex;
+   flex-direction: column;
+ }
+ .searchUser {
+   z-index: 1;
+   height: 40px;
+   /* padding: 5px; */
+   padding-left: 10px;
+ }
+ .searchContainer {
+  position: relative;
+  width: fit-content;
+  margin-top: -5px;
+ }
+ .formSearch{
+  border-radius: 20px !important;
+ }
+ .searchIcon {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   z-index: 1;
+   opacity: 0.5;
+ }
+ .displaySearch {
+   height: max-content;
+   background-color: ivory;
+   border-radius: 10px;
+ }
+ 
+ 

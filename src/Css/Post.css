@@ -1,0 +1,144 @@
+.postContainer {
+    margin: 10vh 20px;
+    height: max-content;
+}
+.md-form > input{
+    font-size: xx-large;
+}
+
+.tile_type{
+    display: flex;
+}
+.signin{
+    margin: 20px;
+    margin-left: 250px;
+    text-align: center;
+}
+.signin >Button{
+    border-radius: 25px;
+}
+.signin>p{
+    text-align: center;
+}
+.filecont{
+    position: absolute;
+    right: 100px;
+    top: 20%;
+    transform: translateY(50px);
+    flex: 0.3;
+    border-style: dotted;
+    width: 500px;
+    height: fit-content;
+    background-color: lightgray;
+    
+}
+.tag{
+    display: flex;
+}
+
+#ptag {
+    padding-left: 100px;
+}
+
+#cloudIcon {
+    color: royalblue;
+    width: 70px;
+    height: 70px;
+}
+ 
+.fileUpload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    margin: 0;
+    padding: 7px;
+}
+ 
+.uploadbut {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: medium;
+    margin: 0;
+}
+
+.uploadStat {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: medium;
+    font-size: medium;
+    margin: 0;
+}
+
+#uploadStat {
+    color: black;
+}
+#uploadButton {
+    margin-top: 10px;
+    cursor: not-allowed;
+}
+#uploadProgress {
+    width: 90%;
+    margin: 10px auto;
+    background-color: transparent;
+}
+.selectError, .textError, .textareaError{
+ color: red;
+ font-size: small;
+}
+.previewImage {
+    width: 95%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.uploadContainer{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    height: fit-content;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    margin:20px;
+    justify-content: space-between;
+}
+
+.uploadContainerShyam{
+    padding: 20px;
+    border: 1px solid black;
+    width: 45%;
+    margin: 5px;
+    min-width: 250px;
+}
+
+#loadingUpload {
+    color: black;
+    position: absolute;
+    left: 45%;
+    top: 40%;   
+    z-index: 1;
+    display: none;
+}
+.linksForPosts {
+    margin: 15px;
+    width: 100%;
+}
+.flex-container {
+    height: 90vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.flex-container form {
+    flex: 0.9;
+    margin-top: 20px;
+}
+.socialmedia-links {
+    margin: 20px;
+}
+.socialmedia-links div {
+    margin-top: 20px;
+}

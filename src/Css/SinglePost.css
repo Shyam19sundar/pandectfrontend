@@ -1,0 +1,71 @@
+.post_body {
+  width: 50vw;
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+.postuser_info {
+  display: flex;
+  align-items: center;
+}
+.postuser_dp {
+  width: 50px !important;
+  height: 50px !important;
+}
+.commentBox {
+  border-radius: 10px;
+}
+.postuser_name {
+  margin-left: 20px;
+  font-size: medium;
+  font-weight: 700;
+}
+.btn {
+  background-color: #1b08bd;
+}
+.post_youtube {
+  width: 45vw;
+  height: 50vh;
+}
+
+.likecommentshare {
+  display: flex;
+  margin: 10px 10px 10px 20px !important;
+}
+
+.post_content {
+  padding: 2vw 2vw 0vw 2vw;
+}
+.button button {
+  background-color: #1b08bd;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  /* margin-top: 2px;
+  margin-right: 1vw; */
+  margin: 1vw;
+  color: white;
+  padding: 3px;
+}
+.commentBox {
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #f9f5fa;
+}
+#reply {
+  width: 100%;
+  margin-left: 2.5vw;
+}
+.commentBox > div {
+  cursor: pointer;
+}
+#comment {
+  margin: 1vw;
+
+  width: 100%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.insta-post {
+  display: flex;
+  justify-content: center;
+}

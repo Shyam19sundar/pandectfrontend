@@ -1,0 +1,21 @@
+.searchUser {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width:100%;
+    cursor: pointer;
+    color: blue;
+}
+.searchUser p{
+    margin-bottom: 0 ; 
+}
+a {
+    text-decoration: none !important;
+}
+
+.searchUserImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 7px;
+}

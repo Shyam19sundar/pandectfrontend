@@ -1,0 +1,85 @@
+.comment__user{
+    display: flex;
+    padding-top: 10px;
+}
+
+.comment__full{
+  border-radius: 8px;
+  padding: 1vw 2vw 1vw 2vw;
+}
+
+.comment__user__name{
+    flex: 1;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    font-weight: 600; 
+    margin-left: 1vw;  
+}
+
+.details{
+    display: flex;
+    margin: 0vh 5vw 3vh 4vw;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.commentReply{
+    cursor: pointer;
+    margin: 2vh 0vh 0vh 0vw;
+    font-size: small;
+}
+
+.commentBox {
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    width: 47%;
+}
+
+.likeCommentOnly{
+    flex: 0.2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.likeAndNumber > h3{
+    margin-top: 1vh;
+    font-size: 20px;
+}
+
+.likeAndNumber{
+    flex: 0.5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.likeCommentOnly > h3{
+    margin-top: 1vh;
+    font-size: 20px;
+}
+
+.commentBox > input {
+    width: 90%;
+    border-radius: 5px;
+}
+
+.comment_replies {
+    width: 100%;
+    padding-left: 40px;
+}
+
+#replyForm{
+    width: 49% !important;
+}
+
+#replyForm > div{
+    display: flex;
+    flex: 0.2;
+    justify-content: space-between;
+}

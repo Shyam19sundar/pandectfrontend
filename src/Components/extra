@@ -1,0 +1,112 @@
+
+    e.preventDefault();
+    var optionSelected = $("#inputtype option:selected").attr("value");
+    if ($("#titleId").val() === "") {
+      $(".textError").text("Choose a value*").show();
+      $(".textareaError").text("Choose a value*").hide();
+      $(".selectError").text("Choose a value*").hide();
+    } else if (optionSelected === "choose") {
+      $(".textError").text("Choose a value*").hide();
+      $(".selectError").text("Choose a value*").show();
+      $(".textareaError").text("Choose a value*").hide();
+    } else if ($("#textareaId").val() === "") {
+      $(".selectError").text("Choose a value*").hide();
+      $(".textareaError").text("Choose a value*").show();
+      $(".textError").text("Choose a value*").hide();
+    } else {
+      $(".textError").text("Choose a value*").hide();
+      $(".selectError").text("Choose a value*").hide();
+      $(".textareaError").text("Choose a value*").hide();
+      if (post.image.equals(images)) {
+        console.log("ys");
+      }
+      if (images.length !== 0) {
+        $(".postContainer").css({ opacity: "0.3" });
+        $("#loadingUpload").show();
+        for (let i = 0; i < images.length; i++) {
+          const type = images[i].type.substring(
+            images[i].type.lastIndexOf("/") + 1
+          );
+          console.log(type);
+          if (
+            type === "jpg" ||
+            type === "jpeg" ||
+            type === "png" ||
+            type === "gif"
+          ) {
+            const date = Date.now();
+            const uploadTask = storage
+              .ref(`images/${images[i]?.name}_${date}`)
+              .put(images[i]);
+            uploadTask.on(
+              "state_changed",
+              (snapshot) => {
+                const progressCurrent = Math.round(
+                  (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                );
+              },
+              (error) => {
+                console.log(error);
+              },
+              () => {
+                storage
+                  .ref("images")
+                  .child(`${images[i]?.name}_${date}`)
+                  .getDownloadURL()
+                  .then((urlTemp) => {
+                    urlImage.push(urlTemp);
+                    seturlImage(urlImage);
+                    if (urlImage.length + urlDocs.length == images.length) {
+                      setisCondnTrue(true);
+                    }
+                  });
+              }
+            );
+          } else {
+            const date = Date.now();
+            const uploadTask = storage
+              .ref(`docs/${images[i]?.name}_${date}`)
+              .put(images[i]);
+            uploadTask.on(
+              "state_changed",
+              (snapshot) => {
+                const progressCurrent = Math.round(
+                  (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+                );
+              },
+              (error) => {
+                console.log(error);
+              },
+              () => {
+                storage
+                  .ref("docs")
+                  .child(`${images[i]?.name}_${date}`)
+                  .getDownloadURL()
+                  .then((urlTemp) => {
+                    urlDocs.push(urlTemp);
+                    seturlDocs(urlDocs);
+                    if (urlImage.length + urlDocs.length == images.length) {
+                      setisCondnTrue(true);
+                    }
+                  });
+              }
+            );
+          }
+        }
+      } else {
+        axios
+          .post("/edit-post", {
+            post_title: title,
+            post_type: type,
+            post_subtext: subtext,
+            post_youtubeLink: youtube,
+            post_insta: insta,
+            post_content: content,
+            user: user.email,
+            _id: post._id,
+
+            url: url,
+          })
+          .then((res) => history.push("/"));
+      }
+    }

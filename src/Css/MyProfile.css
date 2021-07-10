@@ -1,0 +1,37 @@
+.top {
+  display: flex;
+}
+.inner-top-left {
+  flex: 0.25;
+  margin-top: 2vw;
+}
+.inner-top-left img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 500px;
+}
+#first,
+#last {
+  padding-left: 0.5px;
+}
+.inner_name {
+  font-size: larger;
+  font-weight: 500;
+  font-family: cursive;
+  margin-top: 2vh;
+  text-align: center;
+}
+.button,
+.image {
+  display: flex;
+  justify-content: center;
+}
+.inner_button {
+  margin-top: 2vh;
+  background-color: #3f45b7 !important;
+  border-radius: 100px !important;
+  padding: 4px 20px 4px 20px !important;
+}
+.inner-top-right {
+  flex: 0.75;
+}

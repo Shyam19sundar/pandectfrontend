@@ -1,0 +1,26 @@
+.reply_user {
+    display : flex;
+    align-items: center;
+}
+
+.reply_user img {
+    width: 33px;
+    height: 33px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.reply_user > h6{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.reply-content{
+    padding: 0.5vw 1vw 0.5vw 4vw;
+    flex: 0.8;
+}
+
+.replyAndDelete{
+    display: flex;
+}
