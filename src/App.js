@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import Auctions from "./Components/Auctions";
 import About from "./Components/About";
 import Header from "./Components/Header";
