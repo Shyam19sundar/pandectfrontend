@@ -17,6 +17,7 @@ const storage = firebase.storage()
 
 const auth = firebase.auth()
 
+auth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
 
 const provider = new firebase.auth.GoogleAuthProvider()
 
